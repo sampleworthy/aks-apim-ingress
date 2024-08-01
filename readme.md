@@ -56,7 +56,7 @@ The following resources will be deployed: ![](images/resources.png)
 
 > Note how we are using the static IP address `10.10.0.10` for the Ingress Controller. This IP will be used to configure the API Management API backend.
 
-After that, you will need to deploy an application to the AKS cluster. To do this, run the following commands from the `kubernetes` directory:
+After that, you will need to deploy an application to the AKS cluster. To do this, run the following commands from the `k8s` directory:
 
 ```sh
 kubectl apply -f 1-app.yaml,2-nginx-internal-controller.yaml,3-ingress-internal.yaml
